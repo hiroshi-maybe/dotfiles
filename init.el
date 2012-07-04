@@ -26,6 +26,18 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (setq-default c-basic-offset 2) ; for js2
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; PHP-mode 2012/7/4
+; http://blog.asial.co.jp/190
+(autoload 'php-mode "php-mode")
+(setq auto-mode-alist
+      (cons '("\\.php\\'" . php-mode) auto-mode-alist))
+(setq php-mode-force-pear t)
+;(add-hook 'php-mode-user-hook
+;  '(lambda ()
+;     (setq php-manual-path "/usr/local/share/php/doc/html")
+;     (setq php-manual-url "http://www.phppro.jp/phpmanual/")))
+
 ;;; ruby-mode
 ; http://jutememo.blogspot.com/2008/06/meadow-ruby-mode.html
 (autoload 'ruby-mode "ruby-mode"
