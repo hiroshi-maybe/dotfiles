@@ -55,6 +55,13 @@
             (inf-ruby-keys)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Haskell-mode 2012/11/23
+;;; http://projects.haskell.org/haskellmode-emacs/
+(autoload 'haskell-mode "haskell-mode")
+(setq auto-mode-alist
+      (append '(("\\.hs$" . haskell-mode)) auto-mode-alist))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Backup
 ;; *.~ とかのバックアップファイルを作らない
 (setq make-backup-files nil)
