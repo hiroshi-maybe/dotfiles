@@ -18,6 +18,12 @@
       indent-tabs-mode nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; key map
+(global-set-key "\C-h" 'delete-backward-char)
+(global-set-key "\C-d" 'delete-char)
+(global-set-key [(meta D)] 'backward-kill-word) ;; (meta d) is opposite
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; major mode
 
 ;;; js2-mode 2012/1/17
