@@ -1,7 +1,12 @@
-Private emacs.d.
+My dot files.
 
--Japanese
--Ruby
--javascript
--PHP
--Haskell
+<h2>emacs.d</h2>
+
+<ul>
+<li>Key bind</li>
+<li>Japanese</li>
+<li>Ruby</li>
+<li>javascript</li>
+<li>PHP</li>
+<li>Haskell</li>
+</ul>
