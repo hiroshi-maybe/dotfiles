@@ -9,3 +9,4 @@ My Dotfiles
 + javascript
 + PHP
 + Haskell
++ Scala

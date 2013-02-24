@@ -68,6 +68,13 @@
       (append '(("\\.hs$" . haskell-mode)) auto-mode-alist))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Scala-mode 2013/02/23
+;;; http://blog.iss.ms/2012/06/02/101357
+(autoload 'scala-mode "scala-mode")
+(setq auto-mode-alist
+      (append '(("\\.scala$" . scala-mode)) auto-mode-alist))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Backup
 ;; *.~ とかのバックアップファイルを作らない
 (setq make-backup-files nil)
