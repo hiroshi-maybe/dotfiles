@@ -1,0 +1,13 @@
+[user]
+	name = Hiroshi Kori
+	email = hiroshi.maybe@gmail.com
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	stash-unapply = !git stash show -p | git apply -R
+	gr = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
