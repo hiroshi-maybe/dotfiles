@@ -121,3 +121,5 @@
 (setq fast-lock nil)
 (setq lazy-lock nil)
 (setq jit-lock t)
+
+(put 'upcase-region 'disabled nil)
