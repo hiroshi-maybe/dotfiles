@@ -75,6 +75,13 @@
       (append '(("\\.scala$" . scala-mode)) auto-mode-alist))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; web-mode.el for jsx
+;;; CAUTION: web-mode.el is not compatible with emacs 22.x. Load by emacs 24.x.
+
+(autoload 'web-mode "web-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Backup
 ;; *.~ とかのバックアップファイルを作らない
 (setq make-backup-files nil)
