@@ -32,17 +32,12 @@
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (setq-default c-basic-offset 2) ; for js2
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; PHP-mode 2012/7/4
 ; http://blog.asial.co.jp/190
 (autoload 'php-mode "php-mode")
 (setq auto-mode-alist
       (cons '("\\.php\\'" . php-mode) auto-mode-alist))
 (setq php-mode-force-pear t)
-;(add-hook 'php-mode-user-hook
-;  '(lambda ()
-;     (setq php-manual-path "/usr/local/share/php/doc/html")
-;     (setq php-manual-url "http://www.phppro.jp/phpmanual/")))
 
 ;;; ruby-mode
 ; http://jutememo.blogspot.com/2008/06/meadow-ruby-mode.html
@@ -60,32 +55,29 @@
           '(lambda ()
             (inf-ruby-keys)))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Haskell-mode 2012/11/23
 ;;; http://projects.haskell.org/haskellmode-emacs/
 (autoload 'haskell-mode "haskell-mode")
 (setq auto-mode-alist
       (append '(("\\.hs$" . haskell-mode)) auto-mode-alist))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Scala-mode 2013/02/23
 ;;; http://blog.iss.ms/2012/06/02/101357
 (autoload 'scala-mode "scala-mode")
 (setq auto-mode-alist
       (append '(("\\.scala$" . scala-mode)) auto-mode-alist))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;;; web-mode.el for jsx
 ;;; CAUTION: web-mode.el is not compatible with emacs 22.x. Load by emacs 24.x.
-
 (autoload 'web-mode "web-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Backup
-;; *.~ とかのバックアップファイルを作らない
+;; Prevent auto creation of *.~ backup
 (setq make-backup-files nil)
-;;; .#* とかのバックアップファイルを作らない
+;; Prevent auto creation of .#* backup
 (setq auto-save-default nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -106,23 +98,23 @@
 ;; http://homepage.mac.com/zenitani/emacs-j.html
 ;; for mac only
 (setq mac-option-modifier 'meta)
-;;ホイルマウスの設定
+;; mouse wheel
 (mouse-wheel-mode t)
 (setq mouse-wheel-follow-mouse t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Appearance 2012/1/18
-;; リージョンに色をつける
+;; Coloring region
 (setq transient-mark-mode t)
-;; スタートアップメッセージを非表示
+;; Hide startup message
 (setq inhibit-startup-screen t)
-;; tool-barを非表示。コンソールでは不要
+;; Hide tool-bar
 (tool-bar-mode 0)
-;; scroll-barを非表示。コンソールでは不要
+;; Hide scroll-bar
 (scroll-bar-mode 0)
-;; menu-barを非表示
+;; Hide menu-bar
 (menu-bar-mode 0)
-;; 色分けの設定
+;; More coloring
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 (setq fast-lock nil)
