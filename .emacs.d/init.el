@@ -30,6 +30,7 @@
 ; http://code.google.com/p/js2-mode/wiki/InstallationInstructions
 (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
 (setq-default c-basic-offset 2) ; for js2
 
 ;;; PHP-mode 2012/7/4
