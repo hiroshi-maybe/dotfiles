@@ -9,6 +9,7 @@
 	ci = commit
 	st = status
 	cp = cherry-pick
+	bs = bisect
 	unstage = reset HEAD --
 	stash-unapply = !git stash show -p | git apply -R
 	gr = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
