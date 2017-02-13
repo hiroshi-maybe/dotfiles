@@ -10,3 +10,7 @@ My Dotfiles
 + PHP
 + Haskell
 + Scala
+
+.gitconfig
+------
++ Alias
