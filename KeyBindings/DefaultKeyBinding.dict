@@ -1,0 +1,7 @@
+/* ~/Library/KeyBindings/DefaultKeyBinding.dict */
+{  
+     /* Move word */  
+     "~f" = "moveWordForward:";
+     "~b" = "moveWordBackward:";
+     "~d" = "deleteWordForward:";
+}
