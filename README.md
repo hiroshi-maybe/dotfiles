@@ -33,6 +33,7 @@ DefaultKeyBinding.dict
 
 Usage:
 ```
+$ mkdir -p $HOME/Library/KeyBindings
 $ cd $HOME/Library/KeyBindings
 $ ln -s /path-to/github/dotfiles/KeyBindings/DefaultKeyBinding.dict .
 ```
